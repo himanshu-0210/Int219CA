@@ -14,23 +14,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Shahil9728/TradeG-Landing-Page">
+  <a href="https://github.com/himanshu-0210/Int219CA">
     <img src="assets/logo1.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center"><a href="https://tradeg.netlify.app/" target="_blank">TradeG Landing Page</a></h3>
+  <h3 align="center"><a href="https://tardinghimanshu.netlify.app/" target="_blank">TradeG Landing Page</a></h3>
 
   <p align="center">
     <br />
-    <a href="https://github.com/Shahil9728/TradeG-Landing-Page/issues">Report Bug</a>
+    <a href="https://github.com/himanshu-0210/Int219CA/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Shahil9728/TradeG-Landing-Page/issues">Request Feature</a>
+    <a href="https://github.com/himanshu-0210/Int219CA/issues">Request Feature</a>
   </p>
 </div>
 
 ### TradeG-Landing-Page
 
-Project Link: [https://tradeg.netlify.app/](https://tradeg.netlify.app/)
+Project Link: [https://tardinghimanshu.netlify.app/](https://tardinghimanshu.netlify.app/)
 
 #A trading landing page is a website designed to capture the attention of potential traders and persuade them to take action, such as signing up for a trading account or subscribing to a trading service. The page typically includes information about the benefits of trading with the company, such as low fees, a wide selection of assets, or advanced trading tools. It may also feature testimonials from satisfied customers, educational resources, and links to social media channels. The design of the landing page is optimized for conversion, with clear calls to action and user-friendly navigation. Overall, a trading landing page is designed to build trust and motivate users to take the first step towards trading with the company.
 
@@ -53,10 +53,6 @@ This section lists about the languages used in this project .
 
 <!-- CONTACT -->
 ## Contact
-
-Your Name - [@Shahil9728](https://twitter.com/Shahil9728) - shahilverma91383@gmail.com
-
-Project Link: [https://tradeg.netlify.app/](https://tradeg.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
