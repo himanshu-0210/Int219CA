@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeG</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bootstarp css and javascript -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- --------------------------------- -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/logo1.png" type="image/x-icon">
+
+    <style>
+        .preloader {
+            overflow-x: hidden;
+            background: #ffffff url(assets/1amu.gif) no-repeat center center;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            background-size: 15%;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="preloader">
+
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">STOCK MARKET COURSES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SCREENERS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TRADING TOOLS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">KNOWLEDGE BASE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">JOB ORIENTED COURSES</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ANALYSIS TOOL
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">NIFTY OPTION CHAIN</a>
+                        <a class="dropdown-item" href="#">FOREX COPY TRADING</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">FOREX HEAT MAP</a>
+                        <a class="dropdown-item" href="#">NIFTY OI</a>
+                        <a class="dropdown-item" href="#">LIVE OHLC</a>
+                        <a class="dropdown-item" href="#">FOREX MARKET SENTIMENT</a>
+                        <a class="dropdown-item" href="#">BANK NIFTY OPTION CHAIN</a>
+                        <a class="dropdown-item" href="#">SECTOR WISE MARKET</a>
+                        <a class="dropdown-item" href="#">FOREX TECHNICAL SIGNALS</a>
+                        <a class="dropdown-item" href="#">BANKNIFTY OI</a>
+                        <a class="dropdown-item" href="#">ECONOMIC CALENDER</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <div class="heading">
+        <img src="assets/logo.png" alt="">
+        <div class="mt inputs">
+            <i class="fa fa-search"></i>
+            <input type="text" class="form-control " placeholder="Search for investment, trading & analysis">
+        </div>
+        <button class="btn">Log In/Sign up</button>
+    </div>
+
+    <div class="container">
+        <div class="first-div">
+            <div class="first-text" data-aos="fade-right">
+                <p class="first-t">Up Your <span style="color:#03a413">Financial Skills</span><br>
+                    <span class="first-t">To<span style="color:#03a413"> Advance</span> Your
+                        <br><span style="color:#03a413">Career</span> Path
+                    </span>
+                </p>
+                <p style="font-size: 0.8rem;">Learn Stock Market Trading from N.I.S.M & CFA Certified Financial experts.
+                    Download Tradeg Earning app today.</p>
+                <div class="btns">
+                    <button class="btn">Get Started</button>
+                    <button class="btn btn-hide">
+                        Free Trial
+                    </button>
+                </div>
+                <div class="first-l">
+                    <div class="l-1">
+                        <img src="assets/first-1.png" alt="">Interactive Sessions
+                    </div>
+                    <div class="l-1">
+                        <img src="assets/first-2.png" alt="">Career-Oriented
+                    </div>
+                    <div class="l-1">
+                        <img src="assets/first-3.png" alt="">Creative Thinking
+                    </div>
+                </div>
+            </div>
+            <div class="first-img" data-aos="fade-left">
+                <img src="assets/first.png" alt="">
+            </div>
+        </div>
+
+        <div class="second-div" data-aos="fade-up">
+            <div class="first-img second-img">
+                <img src="assets/second.png" alt="">
+            </div>
+            <div class="second-text">
+                <h2 style="font-weight: 700;" class="second-head">Welcome to <span style="color:#03a413">TRADeg
+                        Financial</span></h2>
+                <p>TRADogs stock marketing and any firm were one of the fastest growing TRegis stock marketing and
+                    analysis, were one of the fastest growing organization in India The purpose of TRAD is to provide
+                    right way of trading to the folders and perfect training to the one who work The scaling days on
+                    Today's traders as capable as professional troders. Our motto temporal Traces of india and We are
+                    focused to prod Techriced over of the meet only be well as rings and tools to Technical overview of
+                    the market on daily basis as well as Learnings and tools to Retail Traders the country.</p>
+
+                <button class="btn"
+                    style="display: inline-block; width: fit-content; padding-left: 5rem;padding-right: 5rem;">
+                    Discover
+                </button>
+            </div>
+        </div>
+
+        <div class="second-div">
+            <div class="second-text" data-aos="fade-right">
+                <h2 style="font-weight: 700;" class="second-head">Learn Investment &Trading with <span
+                        style="color:#03a413">Industry Experts</span></h2>
+                <p>"Take control of your front our compacting opp from Take control of your financial future with our
+                    comprehensive financial leaning app from Stock investment and Mutual und Stack trading & Scoping we
+                    have everything you need to maintain Tracked lening opp is designed to empower you with the
+                    knowledge and skils you d everyone."</p>
+
+                <button class="btn"
+                    style="display: inline-block; width: fit-content; padding-left: 5rem;padding-right: 5rem;">
+                    Discover
+                </button>
+            </div>
+            <div class="first-img second-img" data-aos="fade-left">
+                <img src="assets/third.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <h2 class="bar">Financial Courses by CFA & N.I.S.M Certified Finance Professionals</h2>
+
+    <div class="container">
+        <div class="stock-divs">
+            <div class="stock" data-aos="fade-up">
+                <div class="stock-head-div">
+                    <p class="stock-head">
+                        Stock Investment Live Master Course
+                    </p>
+                    <button class="live-btn">
+                        LIVE
+                    </button>
+                </div>
+                <div class="date-time">
+                    <p><i class="fa fa-flag" aria-hidden="true" style="margin-right: 5px;"></i>15-01-2023</p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true" style="margin-right: 5px;"></i>07:00 PM</p>
+                </div>
+                <div class="stock-text" style="font-size: 0.7rem;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur nulla veritatis quae
+                    voluptas inventore, eius reprehenderit obcaecati soluta eaque, sed illo esse velit iste.
+                </div>
+                <div class="stock-data">
+                    <div class="mentors">
+                        <p style="font-size: 0.8rem;font-weight: 600;">Mentors</p>
+                        <div class="mentor-acc">
+                            <div class="mentor-l acc-1" style="background-color: #f2b63e; color: #d68715">K.S</div>
+                            <div class="mentor-l acc-2" style="background-color: #f39aae; color:#981c38;">A.J</div>
+                            <div class="mentor-l acc-3" style="background-color: #95d2e7; color: #1a9dca;">M.K</div>
+                            <div class="mentor-l acc-4" style="background-color: #a55ffe; color: #6713d2;">K.J</div>
+                        </div>
+                    </div>
+                    <div class="stock-batch">
+                        <div class="batch-head">
+                            <p>Batch Progress</p>
+                            <p>78% Seats Filled</p>
+                        </div>
+                        <div class="batch-progress">
+                            <div class="batch-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stock-btn">
+                    <button class="btn explore-btn">
+                        Explore More
+                    </button>
+                </div>
+            </div>
+            <div class="stock" data-aos="fade-up">
+                <div class="stock-head-div">
+                    <p class="stock-head">
+                        Stock Investment Live Master Course
+                    </p>
+                    <button class="live-btn">
+                        LIVE
+                    </button>
+                </div>
+                <div class="date-time">
+                    <p><i class="fa fa-flag" aria-hidden="true" style="margin-right: 5px;"></i>15-01-2023</p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true" style="margin-right: 5px;"></i>07:00 PM</p>
+                </div>
+                <div class="stock-text" style="font-size: 0.7rem;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur nulla veritatis quae
+                    voluptas inventore, eius reprehenderit obcaecati soluta eaque, sed illo esse velit iste.
+                </div>
+                <div class="stock-data">
+                    <div class="mentors">
+                        <p style="font-size: 0.8rem;font-weight: 600;">Mentors</p>
+                        <div class="mentor-acc">
+                            <div class="mentor-l acc-1" style="background-color: #f2b63e; color: #d68715">K.S</div>
+                            <div class="mentor-l acc-2" style="background-color: #f39aae; color:#981c38;">A.J</div>
+                            <div class="mentor-l acc-3" style="background-color: #95d2e7; color: #1a9dca;">M.K</div>
+                            <div class="mentor-l acc-4" style="background-color: #a55ffe; color: #6713d2;">K.J</div>
+                        </div>
+                    </div>
+                    <div class="stock-batch">
+                        <div class="batch-head">
+                            <p>Batch Progress</p>
+                            <p>78% Seats Filled</p>
+                        </div>
+                        <div class="batch-progress">
+                            <div class="batch-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stock-btn">
+                    <button class="btn explore-btn">
+                        Explore More
+                    </button>
+                </div>
+            </div>
+            <div class="stock" data-aos="fade-up">
+                <div class="stock-head-div">
+                    <p class="stock-head">
+                        Stock Investment Live Master Course
+                    </p>
+                    <button class="live-btn">
+                        LIVE
+                    </button>
+                </div>
+                <div class="date-time">
+                    <p><i class="fa fa-flag" aria-hidden="true" style="margin-right: 5px;"></i>15-01-2023</p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true" style="margin-right: 5px;"></i>07:00 PM</p>
+                </div>
+                <div class="stock-text" style="font-size: 0.7rem;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur nulla veritatis quae
+                    voluptas inventore, eius reprehenderit obcaecati soluta eaque, sed illo esse velit iste.
+                </div>
+                <div class="stock-data">
+                    <div class="mentors">
+                        <p style="font-size: 0.8rem;font-weight: 600;">Mentors</p>
+                        <div class="mentor-acc">
+                            <div class="mentor-l acc-1" style="background-color: #f2b63e; color: #d68715">K.S</div>
+                            <div class="mentor-l acc-2" style="background-color: #f39aae; color:#981c38;">A.J</div>
+                            <div class="mentor-l acc-3" style="background-color: #95d2e7; color: #1a9dca;">M.K</div>
+                            <div class="mentor-l acc-4" style="background-color: #a55ffe; color: #6713d2;">K.J</div>
+                        </div>
+                    </div>
+                    <div class="stock-batch">
+                        <div class="batch-head">
+                            <p>Batch Progress</p>
+                            <p>78% Seats Filled</p>
+                        </div>
+                        <div class="batch-progress">
+                            <div class="batch-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stock-btn">
+                    <button class="btn explore-btn">
+                        Explore More
+                    </button>
+                </div>
+            </div>
+            <div class="stock" data-aos="fade-up">
+                <div class="stock-head-div">
+                    <p class="stock-head">
+                        Stock Investment Live Master Course
+                    </p>
+                    <button class="live-btn">
+                        LIVE
+                    </button>
+                </div>
+                <div class="date-time">
+                    <p><i class="fa fa-flag" aria-hidden="true" style="margin-right: 5px;"></i>15-01-2023</p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true" style="margin-right: 5px;"></i>07:00 PM</p>
+                </div>
+                <div class="stock-text" style="font-size: 0.7rem;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur nulla veritatis quae
+                    voluptas inventore, eius reprehenderit obcaecati soluta eaque, sed illo esse velit iste.
+                </div>
+                <div class="stock-data">
+                    <div class="mentors">
+                        <p style="font-size: 0.8rem;font-weight: 600;">Mentors</p>
+                        <div class="mentor-acc">
+                            <div class="mentor-l acc-1" style="background-color: #f2b63e; color: #d68715">K.S</div>
+                            <div class="mentor-l acc-2" style="background-color: #f39aae; color:#981c38;">A.J</div>
+                            <div class="mentor-l acc-3" style="background-color: #95d2e7; color: #1a9dca;">M.K</div>
+                            <div class="mentor-l acc-4" style="background-color: #a55ffe; color: #6713d2;">K.J</div>
+                        </div>
+                    </div>
+                    <div class="stock-batch">
+                        <div class="batch-head">
+                            <p>Batch Progress</p>
+                            <p>78% Seats Filled</p>
+                        </div>
+                        <div class="batch-progress">
+                            <div class="batch-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stock-btn">
+                    <button class="btn explore-btn">
+                        Explore More
+                    </button>
+                </div>
+            </div>
+            <div class="stock" data-aos="fade-up">
+                <div class="stock-head-div">
+                    <p class="stock-head">
+                        Stock Investment Live Master Course
+                    </p>
+                    <button class="live-btn">
+                        LIVE
+                    </button>
+                </div>
+                <div class="date-time">
+                    <p><i class="fa fa-flag" aria-hidden="true" style="margin-right: 5px;"></i>15-01-2023</p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true" style="margin-right: 5px;"></i>07:00 PM</p>
+                </div>
+                <div class="stock-text" style="font-size: 0.7rem;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur nulla veritatis quae
+                    voluptas inventore, eius reprehenderit obcaecati soluta eaque, sed illo esse velit iste.
+                </div>
+                <div class="stock-data">
+                    <div class="mentors">
+                        <p style="font-size: 0.8rem;font-weight: 600;">Mentors</p>
+                        <div class="mentor-acc">
+                            <div class="mentor-l acc-1" style="background-color: #f2b63e; color: #d68715">K.S</div>
+                            <div class="mentor-l acc-2" style="background-color: #f39aae; color:#981c38;">A.J</div>
+                            <div class="mentor-l acc-3" style="background-color: #95d2e7; color: #1a9dca;">M.K</div>
+                            <div class="mentor-l acc-4" style="background-color: #a55ffe; color: #6713d2;">K.J</div>
+                        </div>
+                    </div>
+                    <div class="stock-batch">
+                        <div class="batch-head">
+                            <p>Batch Progress</p>
+                            <p>78% Seats Filled</p>
+                        </div>
+                        <div class="batch-progress">
+                            <div class="batch-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stock-btn">
+                    <button class="btn explore-btn">
+                        Explore More
+                    </button>
+                </div>
+            </div>
+            <div class="stock" data-aos="fade-up">
+                <div class="stock-head-div">
+                    <p class="stock-head">
+                        Stock Investment Live Master Course
+                    </p>
+                    <button class="live-btn">
+                        LIVE
+                    </button>
+                </div>
+                <div class="date-time">
+                    <p><i class="fa fa-flag" aria-hidden="true" style="margin-right: 5px;"></i>15-01-2023</p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true" style="margin-right: 5px;"></i>07:00 PM</p>
+                </div>
+                <div class="stock-text" style="font-size: 0.7rem;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur nulla veritatis quae
+                    voluptas inventore, eius reprehenderit obcaecati soluta eaque, sed illo esse velit iste.
+                </div>
+                <div class="stock-data">
+                    <div class="mentors">
+                        <p style="font-size: 0.8rem;font-weight: 600;">Mentors</p>
+                        <div class="mentor-acc">
+                            <div class="mentor-l acc-1" style="background-color: #f2b63e; color: #d68715">K.S</div>
+                            <div class="mentor-l acc-2" style="background-color: #f39aae; color:#981c38;">A.J</div>
+                            <div class="mentor-l acc-3" style="background-color: #95d2e7; color: #1a9dca;">M.K</div>
+                            <div class="mentor-l acc-4" style="background-color: #a55ffe; color: #6713d2;">K.J</div>
+                        </div>
+                    </div>
+                    <div class="stock-batch">
+                        <div class="batch-head">
+                            <p>Batch Progress</p>
+                            <p>78% Seats Filled</p>
+                        </div>
+                        <div class="batch-progress">
+                            <div class="batch-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stock-btn">
+                    <button class="btn explore-btn">
+                        Explore More
+                    </button>
+                </div>
+            </div>
+            <div class="stock" data-aos="fade-up">
+                <div class="stock-head-div">
+                    <p class="stock-head">
+                        Stock Investment Live Master Course
+                    </p>
+                    <button class="live-btn">
+                        LIVE
+                    </button>
+                </div>
+                <div class="date-time">
+                    <p><i class="fa fa-flag" aria-hidden="true" style="margin-right: 5px;"></i>15-01-2023</p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true" style="margin-right: 5px;"></i>07:00 PM</p>
+                </div>
+                <div class="stock-text" style="font-size: 0.7rem;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur nulla veritatis quae
+                    voluptas inventore, eius reprehenderit obcaecati soluta eaque, sed illo esse velit iste.
+                </div>
+                <div class="stock-data">
+                    <div class="mentors">
+                        <p style="font-size: 0.8rem;font-weight: 600;">Mentors</p>
+                        <div class="mentor-acc">
+                            <div class="mentor-l acc-1" style="background-color: #f2b63e; color: #d68715">K.S</div>
+                            <div class="mentor-l acc-2" style="background-color: #f39aae; color:#981c38;">A.J</div>
+                            <div class="mentor-l acc-3" style="background-color: #95d2e7; color: #1a9dca;">M.K</div>
+                            <div class="mentor-l acc-4" style="background-color: #a55ffe; color: #6713d2;">K.J</div>
+                        </div>
+                    </div>
+                    <div class="stock-batch">
+                        <div class="batch-head">
+                            <p>Batch Progress</p>
+                            <p>78% Seats Filled</p>
+                        </div>
+                        <div class="batch-progress">
+                            <div class="batch-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stock-btn">
+                    <button class="btn explore-btn">
+                        Explore More
+                    </button>
+                </div>
+            </div>
+            <div class="stock" data-aos="fade-up">
+                <div class="stock-head-div">
+                    <p class="stock-head">
+                        Stock Investment Live Master Course
+                    </p>
+                    <button class="live-btn">
+                        LIVE
+                    </button>
+                </div>
+                <div class="date-time">
+                    <p><i class="fa fa-flag" aria-hidden="true" style="margin-right: 5px;"></i>15-01-2023</p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true" style="margin-right: 5px;"></i>07:00 PM</p>
+                </div>
+                <div class="stock-text" style="font-size: 0.7rem;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur nulla veritatis quae
+                    voluptas inventore, eius reprehenderit obcaecati soluta eaque, sed illo esse velit iste.
+                </div>
+                <div class="stock-data">
+                    <div class="mentors">
+                        <p style="font-size: 0.8rem;font-weight: 600;">Mentors</p>
+                        <div class="mentor-acc">
+                            <div class="mentor-l acc-1" style="background-color: #f2b63e; color: #d68715">K.S</div>
+                            <div class="mentor-l acc-2" style="background-color: #f39aae; color:#981c38;">A.J</div>
+                            <div class="mentor-l acc-3" style="background-color: #95d2e7; color: #1a9dca;">M.K</div>
+                            <div class="mentor-l acc-4" style="background-color: #a55ffe; color: #6713d2;">K.J</div>
+                        </div>
+                    </div>
+                    <div class="stock-batch">
+                        <div class="batch-head">
+                            <p>Batch Progress</p>
+                            <p>78% Seats Filled</p>
+                        </div>
+                        <div class="batch-progress">
+                            <div class="batch-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stock-btn">
+                    <button class="btn explore-btn">
+                        Explore More
+                    </button>
+                </div>
+            </div>
+            <div class="stock" data-aos="fade-up">
+                <div class="stock-head-div">
+                    <p class="stock-head">
+                        Stock Investment Live Master Course
+                    </p>
+                    <button class="live-btn">
+                        LIVE
+                    </button>
+                </div>
+                <div class="date-time">
+                    <p><i class="fa fa-flag" aria-hidden="true" style="margin-right: 5px;"></i>15-01-2023</p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true" style="margin-right: 5px;"></i>07:00 PM</p>
+                </div>
+                <div class="stock-text" style="font-size: 0.7rem;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur nulla veritatis quae
+                    voluptas inventore, eius reprehenderit obcaecati soluta eaque, sed illo esse velit iste.
+                </div>
+                <div class="stock-data">
+                    <div class="mentors">
+                        <p style="font-size: 0.8rem;font-weight: 600;">Mentors</p>
+                        <div class="mentor-acc">
+                            <div class="mentor-l acc-1" style="background-color: #f2b63e; color: #d68715">K.S</div>
+                            <div class="mentor-l acc-2" style="background-color: #f39aae; color:#981c38;">A.J</div>
+                            <div class="mentor-l acc-3" style="background-color: #95d2e7; color: #1a9dca;">M.K</div>
+                            <div class="mentor-l acc-4" style="background-color: #a55ffe; color: #6713d2;">K.J</div>
+                        </div>
+                    </div>
+                    <div class="stock-batch">
+                        <div class="batch-head">
+                            <p>Batch Progress</p>
+                            <p>78% Seats Filled</p>
+                        </div>
+                        <div class="batch-progress">
+                            <div class="batch-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stock-btn">
+                    <button class="btn explore-btn">
+                        Explore More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="bar">Explore a new horizon Technology with TradeG</h2>
+
+
+    <div class="fourth-div">
+        <p>Separate the wheat form the chaff with Our Screeners - handy for sorting <br> symbols both by fundamental and
+            technical indicators.</p>
+        <div class="fourth-1">
+            <div class="fourth-img-div" data-aos="fade-right">
+                <img src="assets/fourth-1.png" alt="" class="fourth-img">
+            </div>
+            <div class="fourth-1-text" data-aos="fade-left">
+                <ul>
+                    <li>Equity Screener</li>
+                    <li>Forex Screener</li>
+                    <li>Crypto Screener</li>
+                </ul>
+                <button class="btn exp-btn" style="background-color: black;">
+                    Explore Now
+                </button>
+            </div>
+        </div>
+
+        <div class="fourth-img2" data-aos="zoom-in">
+            <img src="assets/fourth-2.png" alt="" style="cursor: pointer;">
+        </div>
+
+        <div class="fourth-1">
+            <div class="fourth-img-div" data-aos="fade-right">
+                <img src="assets/fourth-3.png" alt="" class="fourth-img">
+            </div>
+            <div class="fourth-1-text" data-aos="fade-left">
+                <h6 style="color:rgb(27, 0, 125);font-weight: 600;">Be a Pro trader! Use our trading tools to enhance
+                    your trading journey</h6>
+                <ul>
+                    <li>ADVANCED CURRENCY CONVERTER</li>
+                    <li>MARGIN REQUIREMENT CALCULATOR</li>
+                    <li>CFD TECHNICAL INDICATOR</li>
+                    <li>HISTORICAL DATA EXPERT </li>
+                    <li>PIVOT POINT CALCULATOR</li>
+                    <li>FIBONACCI CALCULATOR</li>
+                    <li>FOREX POSITION SIZE CALCULATOR</li>
+                    <li>FOREX PROFIT CALCULATOR</li>
+                </ul>
+                <button class="btn exp-btn" style="width:40%;background-color: black;">
+                    Explore Now
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="fifth-div" style="font-size: 2rem;">
+            <p class="first-t" style="text-align: center;">BENEFITS OF OUR ONLINE <br><span
+                    style="color:#03a413;font-size: 2.5rem;">Finance
+                    School</span>
+            </p>
+
+            <div class="fifth-grid" data-aos="fade-up">
+                <div class="fifth-l">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <h5>Social Interaction</h5>
+                    <p>Our courses offer forums or other opportunities to connect with other students, allowing you to
+                        build a network of professionals in your field.</p>
+                </div>
+                <div class="fifth-l">
+                    <ion-icon name="apps-outline"></ion-icon>
+                    <h5>Social Interaction</h5>
+                    <p>Our courses offer forums or other opportunities to connect with other students, allowing you to
+                        build a network of professionals in your field.</p>
+                </div>
+                <div class="fifth-l">
+                    <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                    <h5>Social Interaction</h5>
+                    <p>Our courses offer forums or other opportunities to connect with other students, allowing you to
+                        build a network of professionals in your field.</p>
+                </div>
+                <div class="fifth-l">
+                    <ion-icon name="trending-up-outline"></ion-icon>
+                    <h5>Social Interaction</h5>
+                    <p>Our courses offer forums or other opportunities to connect with other students, allowing you to
+                        build a network of professionals in your field.</p>
+                </div>
+                <div class="fifth-l">
+                    <ion-icon name="flash-outline"></ion-icon>
+                    <h5>Social Interaction</h5>
+                    <p>Our courses offer forums or other opportunities to connect with other students, allowing you to
+                        build a network of professionals in your field.</p>
+                </div>
+                <div class="fifth-l">
+                    <ion-icon name="book-outline"></ion-icon>
+                    <h5>Social Interaction</h5>
+                    <p>Our courses offer forums or other opportunities to connect with other students, allowing you to
+                        build a network of professionals in your field.</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <h2 style="font-weight: 700; font-size: 2rem;text-align: center;margin-bottom: 3rem;">Reasons: Why youu should
+            learn <span style="color:#03a413;font-size: 2rem;">Finance</span> at <span
+                style="color:#03a413;font-size: 2rem;">TRADeg Financial</span></h2>
+
+        <div class="fifth-grid" data-aos="fade-up">
+            <div class="fifth-r">
+                <div class="fifth1" style="background-color: #efadff;color: #a926ca;">1</div>
+                <p style="font-weight: 600;margin-bottom: 0rem;">NISM / CFA CERTIFIED EDUCATORS</p>
+            </div>
+            <div class="fifth-r">
+                <div class="fifth1" style="background-color: #ffdbb0;color: #ff8b00;">2</div>
+                <p style="font-weight: 600;margin-bottom: 0rem;">ONE TO ONE SESSIONS WITH CERTIFIED MARKET EXPERTS</p>
+            </div>
+            <div class="fifth-r">
+                <div class="fifth1" style="background-color: #ffcaca;color: #ff1212;">3</div>
+                <p style="font-weight: 600;margin-bottom: 0rem;">EXTENSIVE STUDY MATERIALS PREPARED BY MARKET EXPERTS
+                </p>
+            </div>
+            <div class="fifth-r">
+                <div class="fifth1" style="background-color: #cac2ff;color: #3918ff;">4</div>
+                <p style="font-weight: 600;margin-bottom: 0rem;">DIVERSIFIED COURSE MODULES</p>
+            </div>
+            <div class="fifth-r">
+                <div class="fifth1" style="background-color: #ffdbe6;color: #ff004d;">5</div>
+                <p style="font-weight: 600;margin-bottom: 0rem;">6 MONTHS DOUBT SUPPORT AFTER COURSE COMPLETION</p>
+            </div>
+            <div class="fifth-r">
+                <div class="fifth1" style="background-color: #b7eeff;color: #02a5d9;">6</div>
+                <p style="font-weight: 600;margin-bottom: 0rem;">LIFETIME FREE ANALYSIS SERVICES & TRADING TOOLS</p>
+            </div>
+        </div>
+    </div>
+    <div class="sixth-div">
+        <h1 style="font-size: 3rem;">We Help You to</h1>
+        <img src="assets/fifth.png" alt="">
+    </div>
+
+    <div class="container">
+        <div class="seventh-div" style="margin-bottom: 5rem;" data-aos="fade-up">
+            <h1 style="margin-bottom: 5rem;text-align: center;">Frequently Asked Questions</h1>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            01. IF I'M COMPLETELY NEW TO TRADING, WILL I UNDERSTAND THE MATERIAL?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            TRADeg Learning App advocates that it is easier teach someone from scratch rather than to
+                            retrain. Retraining is a big challenge, removing old habits is very difficult. Yet not
+                            impossible. The program contains a separate chapter for beginners. Where all most commonly
+                            asked questions are answered - what is a candle, a trend, a flag, a channel, a short, a bid,
+                            an ask. As well as - who are the sellers and buyers, how to choose a broker, in which market
+                            to start, and much, much more.
+                            According to the experiences of our students, even those whose level before training in the
+                            program was equal to zero - achieved the desired results. TRADeg Learning
+                            App provides a lot of simple training solutions for beginners; therefore, anyone can succeed
+                            in the financial markets. All it takes is persistence and proper mentorship.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            02. WILL I BE ABLE TO COMMUNICATE WITH TRADEG LEARNING EDUCATORS AND ASK THEM QUESTIONS
+                            PERSONALLY?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat accusamus debitis
+                            architecto repudiandae! Beatae suscipit deleniti, corporis incidunt natus numquam velit quia
+                            unde quae officiis voluptas culpa rerum inventore sint? Pariatur nostrum placeat expedita
+                            similique quidem, sit magni vitae sunt?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            03. WHAT IS THE POINT OF HOMEWORK, AND HOW WILL IT HELP ME?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nulla tempora nihil
+                            aspernatur quaerat, quo quasi ullam quidem cumque nisi molestias. Neque doloremque sapiente
+                            repudiandae, aliquid temporibus nobis reiciendis doloribus architecto in nihil eaque, eius
+                            culpa non a deleniti suscipit amet dolorum libero earum? Tempora nam dicta distinctio
+                            tempore sit?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            04. CAN AN ORDINARY PERSON WITHOUT SPECIAL COMPUTER SKILLS DEAL WITH THE LEARNING PLATFORM
+                            AND IMPLEMENT THE TOOLS THAT TRADEG LEARNING APP WILL TEACH?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nulla tempora nihil
+                            aspernatur quaerat, quo quasi ullam quidem cumque nisi molestias. Neque doloremque sapiente
+                            repudiandae, aliquid temporibus nobis reiciendis doloribus architecto in nihil eaque, eius
+                            culpa non a deleniti suscipit amet dolorum libero earum? Tempora nam dicta distinctio
+                            tempore sit?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collFive" aria-expanded="false" aria-controls="collFive">
+                            05. EXAMPLES AND LEARNING WILL BE BASED ON WHICH MARKET AND TIMEFRAME?
+                        </button>
+                    </h2>
+                    <div id="collFive" class="accordion-collapse collapse" aria-labelledby="heaFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nulla tempora nihil
+                            aspernatur quaerat, quo quasi ullam quidem cumque nisi molestias. Neque doloremque sapiente
+                            repudiandae, aliquid temporibus nobis reiciendis doloribus architecto in nihil eaque, eius
+                            culpa non a deleniti suscipit amet dolorum libero earum? Tempora nam dicta distinctio
+                            tempore sit?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            06. WHAT SUPPORT AND BY WHOM IT WILL BE PROVIDED TO ME THROUGHOUT THE LEARNING PROGRAM?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nulla tempora nihil
+                            aspernatur quaerat, quo quasi ullam quidem cumque nisi molestias. Neque doloremque sapiente
+                            repudiandae, aliquid temporibus nobis reiciendis doloribus architecto in nihil eaque, eius
+                            culpa non a deleniti suscipit amet dolorum libero earum? Tempora nam dicta distinctio
+                            tempore sit?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            07. I TRADE SMALL VOLUMES, BUT I WANT TO INCREASE THEM. HOW WILL PARTICIPATING IN THE
+                            PROGRAM HELP ME WITH THIS?
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nulla tempora nihil
+                            aspernatur quaerat, quo quasi ullam quidem cumque nisi molestias. Neque doloremque sapiente
+                            repudiandae, aliquid temporibus nobis reiciendis doloribus architecto in nihil eaque, eius
+                            culpa non a deleniti suscipit amet dolorum libero earum? Tempora nam dicta distinctio
+                            tempore sit?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            08. HOW IS THIS PROGRAM DIFFERENT FROM ANY AVERAGE TRADING COURSE?
+                        </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nulla tempora nihil
+                            aspernatur quaerat, quo quasi ullam quidem cumque nisi molestias. Neque doloremque sapiente
+                            repudiandae, aliquid temporibus nobis reiciendis doloribus architecto in nihil eaque, eius
+                            culpa non a deleniti suscipit amet dolorum libero earum? Tempora nam dicta distinctio
+                            tempore sit?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingNine">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            09. WILL I BE ABLE TO LEARN SCALPING WHILE STUDYING IN THE PROGRAM?
+                        </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nulla tempora nihil
+                            aspernatur quaerat, quo quasi ullam quidem cumque nisi molestias. Neque doloremque sapiente
+                            repudiandae, aliquid temporibus nobis reiciendis doloribus architecto in nihil eaque, eius
+                            culpa non a deleniti suscipit amet dolorum libero earum? Tempora nam dicta distinctio
+                            tempore sit?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            10. ISN'T TRADING JUST ANOTHER FORM OF GAMBLING?
+                        </button>
+                    </h2>
+                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nulla tempora nihil
+                            aspernatur quaerat, quo quasi ullam quidem cumque nisi molestias. Neque doloremque sapiente
+                            repudiandae, aliquid temporibus nobis reiciendis doloribus architecto in nihil eaque, eius
+                            culpa non a deleniti suscipit amet dolorum libero earum? Tempora nam dicta distinctio
+                            tempore sit?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEleven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                            11.HOW LONG DOES IT TAKE TO COMPLETE THE LEARNING PROGRAM?
+                        </button>
+                    </h2>
+                    <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nulla tempora nihil
+                            aspernatur quaerat, quo quasi ullam quidem cumque nisi molestias. Neque doloremque sapiente
+                            repudiandae, aliquid temporibus nobis reiciendis doloribus architecto in nihil eaque, eius
+                            culpa non a deleniti suscipit amet dolorum libero earum? Tempora nam dicta distinctio
+                            tempore sit?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr style="color:gray">
+
+    <div class="seventh1-div heading">
+        <img src="assets/logo.png" alt="">
+        <div class="seventh-img">
+            <img src="assets/sixth-1.png" alt="" style="cursor: pointer;">
+            <img src="assets/sixth-2.png" alt="" style="cursor: pointer;">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="eigth-div">
+            <div class="eight-links" data-aos="fade-up">
+                <p style="color:red;">HOME</p>
+                <p>STOCK MARKET COURSES</p>
+                <p>SCREENERS</p>
+                <p>ANALYSIS TOOLS</p>
+                <p>TRADING TOOLS</p>
+                <p>KNOWLEDGE BASE</p>
+                <p>JOB ORIENTED COURSES</p>
+                <button class="btn"
+                    style="background-color: black;color: white;margin-top: 2rem;width:50%">Careers</button>
+            </div>
+            <div class="eigth-address" data-aos="fade-up">
+                <P>520-A MAIDANGARHI NEW DELHI-110017</P>
+                <p>WORKING HOURS</p>
+                <p>MORNING 9:00AM IST</p>
+                <p>EVENING 10:00 PM IST</p>
+                <br>
+                <p>Contact - +916287848943</p>
+                <br>
+                <p>For queries - info@tradeg.org</p>
+                <p>For careerss - careers@tradeg.org</p>
+            </div>
+            <img src="assets/seventh.png" alt="" data-aos="fade-up">
+        </div>
+    </div>
+
+    <img src="assets/eigth.png" alt="" style="width:100%">
+    <p style="text-align: center;font-weight: 600;">Proudly Made in India and Trusted by millions of Indians</p>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        var loader = document.querySelector('.preloader');
+        window.addEventListener('load', function () {
+            loader.style.display = 'none';
+        })
+    </script>
+    <script>
+        AOS.init({
+            offset: 50,
+            duration: 700,
+        });
+    </script>
+
+</body>
+
+</html>
